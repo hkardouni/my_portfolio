@@ -1,6 +1,6 @@
 .nav-bar {
     background: #181818;
-    width: 60px;
+    width: 70px;
     height: 100%;
     position: absolute;
     top: 0;
@@ -26,7 +26,7 @@
     nav {
         display: block;
         text-align: center;
-        position: absolute;        
+        position: absolute;
         height: 210px;
         top: 50%;
         margin-top: -120px;
@@ -45,7 +45,7 @@
                 transition: all 0.3s ease-out;
             }
 
-            &:hover{
+            &:hover {
                 color: #ffd700;
 
                 svg {
@@ -82,9 +82,16 @@
                 content: 'ABOUT';
             }
         }
+
         a.contact-link {
             &:after {
                 content: 'CONTACT';
+            }
+        }
+
+        a.portfolio-link {
+            &:after {
+                content: 'PORTFOLIO';
             }
         }
 
@@ -113,9 +120,66 @@
                 line-height: 16px;
 
                 &:hover svg {
-                    color:#ffd700;
+                    color: #ffd700;
                 }
             }
+        }
+    }
+}
+
+.hamburger-icon, .close-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav-bar {
+        background: transparent;
+        position: initial;
+        height: auto;
+        min-height: auto;
+
+        ul,
+        nav {
+            display: none;
+        }
+
+        nav {
+            width: 50%;
+            height: 100%;
+            background: #181818;
+            top: 0;
+            right: 0;
+            position: fixed;
+            z-index: 2;
+            margin: 0;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            a:after {
+                opacity: 1;
+                position: initial;
+                width: auto;
+                margin-left: 10px;
+            }
+
+            a svg {
+                opacity: 1 !important;
+            }
+
+            &.mobile-show {
+                display: block;
+            }
+        }
+
+        .hamburger-icon, .close-icon {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 15px;
         }
     }
 }

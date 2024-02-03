@@ -8,8 +8,8 @@ import Loader from 'react-loaders'
 
 export default function Home() {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['o', 's', 'e', 'i', 'n']
-    const jobArray = ['w', 'e', 'b',' ','d','e','v','e','l','o','p','e','r']
+    const nameArray = "osein".split("")
+    const jobArray = "web developer".split("")
 
     useEffect(() => {
         return () => setTimeout(() => {
@@ -35,7 +35,7 @@ export default function Home() {
                     <br />
                     <AnimatedLetters letterClass={letterClass}
                         strArray={jobArray}
-                        idx={20}
+                        idx={22}
                     />
                 </h1>
                 <h2>FullStack Developer / React, Next, C# Expert</h2>
