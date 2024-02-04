@@ -3,7 +3,8 @@ import LogoTitle from '../../assets/images/logo-s.png'
 import './index.scss'
 import { useEffect, useState } from 'react'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+// import Logo from './Logo'
+import LogoH from '../../assets/images/logo-h.png'
 import Loader from 'react-loaders'
 
 export default function Home() {
@@ -41,7 +42,8 @@ export default function Home() {
                 <h2>FullStack Developer / React, Next, C# Expert</h2>
                 <Link to="/contact" className='flat-button'>CONTACT ME</Link>
             </div>
-            <Logo />
+            {/* <Logo /> */}
+            <img src={LogoH} className='logo-box' alt='developer'/>
         </div>
         <Loader type='pacman' />
         </>

@@ -5,7 +5,7 @@ export default function AnimatedLetters({ letterClass, strArray, idx }) {
         <span>
             {
                 strArray.map((char, i) => (
-                    <span key={char + 1} className={`${letterClass} _${i + idx}`}>
+                    <span key={`${char}-${i}-${idx}`} className={`${letterClass} _${i + idx}`}>
                         {char}
                     </span>
                 ))

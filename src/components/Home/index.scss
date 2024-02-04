@@ -103,6 +103,19 @@
             // color: #333;
         }
     }
+    .logo-box {
+        width: 400px;
+        height: 400px;
+        margin: 0 auto;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.5;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -146,6 +159,18 @@
                 left: 0;
                 margin: auto;
             }
+        }
+        .logo-box {
+            position: relative;
+            width: 100%;
+            height: auto;
+            top: auto;
+            right: 0;
+            box-sizing: border-box;
+            margin: 0;
+            left: auto;
+            transform: none;
+            opacity: 0.5;
         }
 
     }

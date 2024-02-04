@@ -17,18 +17,6 @@
             "title": "GGWP",
             "description": "React, NEXT.js, Javascript, JSX, Tailwind, CSS, HTML, Node.js",
             "url": "http://google.com"
-        },
-        {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, NEXT.js, Javascript, JSX, Tailwind, CSS, HTML, Node.js",
-            "url": "http://google.com"
-        },
-        {
-            "cover": "/portfolio/1/one.png",
-            "title": "GGWP",
-            "description": "React, NEXT.js, Javascript, JSX, Tailwind, CSS, HTML, Node.js",
-            "url": "http://google.com"
         }
     ]
 }
